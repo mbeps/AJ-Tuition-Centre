@@ -19,16 +19,16 @@
 				</a>
 				<ul>
 					<li><a href="index.php">Home</a></li>
-					<li><a href="#">Courses & Fees</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="courses_&_fees.php">Courses & Fees</a></li>
+					<li><a href="about_us.php">About Us</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 				</nav>
 				<div class="header-login">
 					<?php
         			if (!isset($_SESSION['id'])) {
           				echo '<form action="includes/login.inc.php" method="post">
-            					<input type="text" name="mailuid" placeholder="E-mail/Username">
+            					<input type="text" name="mailuid" placeholder="Email/Username">
             					<input type="password" name="pwd" placeholder="Password">
             					<button type="submit" name="login-submit">Login</button>
           					</form>
